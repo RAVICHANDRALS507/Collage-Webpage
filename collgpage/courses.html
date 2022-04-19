@@ -1,0 +1,500 @@
+<html>
+<head>
+           <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>university website</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>		
+	*{
+	      margin: 0;
+	      padding: 0;
+		  font-family: 'Poppins', sans-serif;
+	  }
+  .header{
+         min-height: 100vh;
+	     width: 100%;
+	     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(online-cyber-security-course.jpg);
+	     background-position: center;
+         background-size: cover;
+         position: relative;
+      }
+
+nav{
+        display: flex;
+         padding: 2%  6%;
+        justify-content: space-between;
+        align-items: center;  
+      }
+
+nav img{
+           width: 150px;
+         }
+
+nav-links{
+           flex: 1;
+		   text-align: right;
+          }
+
+.nav-links ul  li{
+                 list-style: none;
+		        display: inline-block;
+                padding: 8px 12px;
+                position: relative; 
+            }
+			
+	.nav-links ul  li a{		
+                color: #fff;
+                text-decoration: none;
+		        font-size: 13px;
+	}
+	
+.nav-links ul  li::after{
+               content: ' ' ;
+			   width: 0px;
+			   height: 2px;
+			   background:  #f44336;
+			   display: block;
+			   margin: auto;
+			   transition: 0.5s; 
+}
+
+.nav-links ul  li:hover::after{
+               width: 100%;
+			   
+}
+
+.text-box{
+        width: 90%;
+		color: #fff;
+		position: absolute;
+        top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+	}
+	
+.text-box h1{
+	           font-size: 62px;
+        	}
+	
+.text-box p{	
+          margin: 10px 0 40px;
+          font-size: 14px;
+          color: #fff;
+   }
+	
+.textme{
+         padding-left: 100px;
+}
+
+.hero-btn{
+            width: 10%;
+		color: #fff;
+		position: absolute;
+	     padding-top: 10px;
+        padding-left: 0px;
+         display: inline-block;
+		 text-decoration: none;
+		 color: blue;
+		 border: 2px  solid black; 
+		 padding:  12px 34px;
+		 font-size: 13px;
+		 background:  transparent;
+		 position: relative;
+		 cursor:  pointer;
+		 left-side: 50%;
+		  
+}
+
+.hero-btn:hover{
+         border: 1px solid gray;
+		 background: red;
+		 transition: 0.1s;
+}
+
+.textme{
+      padding-left: 100px;
+}
+
+.hero-btn{
+         width: 10%;
+		color: #fff;
+		position: absolute;
+	     padding-top: 10px;
+        padding-left: 0px;
+         display: inline-block;
+		 text-decoration: none;
+		 color: blue;
+		 border: 2px  solid black; 
+		 padding:  12px 34px;
+		 font-size: 13px;
+		 background:  transparent;
+		 position: relative;
+		 cursor:  pointer;
+		 left-side: 50%;
+		  
+}
+
+.hero-btn:hover{
+         border: 1px solid gray;
+		 background: red;
+		 transition: 0.1s;
+}
+
+.textme{
+      padding-left: 280px;
+}
+
+
+
+.hero-btn{
+         width: 10%;
+		 color: #fff;
+	   	 position: absolute;
+	     padding-top: 10px;
+         padding-left: 0px;
+         display: inline-block;
+		 text-decoration: none;
+		 color: blue;
+		 border: 2px  solid black; 
+		 padding:  12px 34px;
+		 font-size: 13px;
+		 background:  transparent;
+		 position: relative;
+		 cursor:  pointer;
+		 left-side: 50%;
+		  
+}
+
+.hero-btn:hover{
+         border: 1px solid gray;
+		 background: red;
+		 transition: 0.1s;
+}
+		 
+p{
+   color: #777;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 22px;
+   padding: 10px;
+}
+
+.footer{
+      width: 100%;
+	  text-align: center;
+	  padding: 30px 0;
+	  padding-top:  70px;
+}
+
+.footer h4{
+       margin-bottom: 25px;
+	   margin-top: 20px;
+	   font-weight: 600;
+}
+
+.about-col{
+     	  padding-top:  50px;
+		    padding-left:50px;
+}
+
+.text-box{
+        width: 90%;
+		color: #fff;
+		position: absolute;
+        top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+	}
+	
+.text-box h1{
+	           font-size: 62px;
+        	}
+	
+.text-box p{	
+          margin: 10px 0 40px;
+          font-size: 14px;
+          color: #fff;
+   }
+	
+
+
+.course{
+     width: 80%;
+	 margin: auto;
+	 text-align: center;
+	 padding-top: 20px;
+		 
+}
+
+.course h1{
+    font-size: 36px;
+	font-weight: 600;
+}
+
+.course p{
+   color: #777;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 22px;
+   padding: 10px;
+   padding-bottom: 20px; 
+}
+
+.row{
+     margin-top: 2%;
+	 display: flex;
+	 justify-content: space-between;
+}
+
+.course-col{
+      flex-basis: 31%;
+	  background: orange;
+	  border-radius: 10px;
+	  margin-bottom: 5%;
+	  padding: 20px 12px;
+	  box-sizing: border-box;
+	  transition: 1s;
+}
+
+h3{
+   text-align: center;
+   font-weight:  600;
+   margin: 10px 0;
+}
+
+.footer{
+      width: 100%;
+	  text-align: center;
+	  padding: 30px 0;
+	  padding-top:  0px;
+}
+
+.footer h4{
+       margin-bottom: 5px;
+	   margin-top: 20px;
+	   font-weight: 600;
+}
+
+.icons .fa{
+     color: #f44336;
+	 margin: 0 13px;
+	 cursor: pointer;
+	 padding: 18px 0;
+}
+
+.fa-heart-o{
+   color: #f44336;
+}
+
+</style>
+</head>
+<body>
+            <section class="header">
+		     	<nav>
+                   <a href=""><img src="nie-first-grade-college-mysore-logo.jpg"></a>
+                        <div class="nav-links">
+					           <ul>
+					                    <li><a href="index.html">HOME</a></li>
+									    <li><a href="about.html">ABOUT US</a></li>
+									    <li><a href="courses.html">COURSE</a></li>
+									    <li><a href="blog.html">BLOG</a></li>
+								        <li><a href="contact.html">CONTACT US</a></li>
+					          </ul>
+					  </div>
+              </nav>
+			        <div  class="text-box">
+			             <h1>Courses</h1>
+						 <P> The beginning of knowledge is the discovery of something we do not understand. </P>
+				    </div>
+           </section>
+		   
+		   		              <section class="course">
+					        <h1>Courses We Offer</h1>
+							<p>In NIE First Grade Collage</p>
+							
+					<div class="row">
+                           <div class="course-col">
+                                 <h3>DEGREE</h3>
+							<p>Education. an academic title conferred by universities and colleges as an indication of the completion of a course of study, or as an honorary recognition of achievement.</P>
+                     </div>		
+					 
+                           <div class="course-col">
+					 <h3>B.C.A</h3>
+					 <p>Bachelor in Computer Application (BCA) is an undergraduate degree course in computer applications. ... Bachelor in Computer Application (BCA) is one of the popular courses among the students who want to make their career in the IT sectors</p>
+				</div>	
+				
+				 <div class="course-col">
+                                 <h3>B.S.C</h3>
+								<p> Whereas a BA is a bachelor of arts, a BSc is a bachelor of science. This is where you'll find the 'hard' sciences such as physics, chemistry, and biology, as well as maths and computing degrees</P>
+                     </div>
+					 
+					  <div class="course-col">
+                                 <h3>B.COM</h3>
+								<p> BCom or Bachelor of Commerce is a three-year undergraduate course imparted in regular as well as distance education mode. BCom is the second most popular undergraduate course in the Commerce branch.</P>
+						</div>
+				</section>
+				
+						         <section class="course">
+					        <h1>Apply Online</h1>
+							<p>In NIE First Grade Collage</p>
+							
+							<div class="course-col">
+				 <center>
+			            <table bolder=" " bordercolor="">
+						<tr>
+							<th><h2>Student Entry Form (Nie campus)<h2></th>
+                      	</tr>
+						
+						<tr>
+						      <td>
+  							        STUDENT ID: <input type="text" name="student_id" size="90"><br><br>
+									STUDENT NAME: <input type="text" name="student_name" size="85"><br><br>
+                                    STUDENT MAIL ID: <input type="text" name="student_name" size="85"><br><br>									
+									PASSWORD: <input type="password" name="password" size="90"><br><br>
+									FATHER NAME: <input type="text" name="student_name" size="87"><br><br>
+									MOTHER NAME: <input type="text" name="student_name" size="87"><br><br>
+									SEX: <input type="radio" name="sex" value="MALE">MALE 
+									SEX: <input type="radio" name="sex" value="FEMALE">FEMALE<br><br>
+									DOB:<select name="Month">
+									    <option value="month">Month</option>
+									    <option value="January">January</option>
+									    <option value="February">February</option>
+										<option value="March">March</option>
+										<option value="April">April</option>
+										<option value="May">May</option>
+										<option value="June">June</option>
+										<option value="July">July</option>
+										<option value="August">August</option>
+										<option value="september">september</option>
+										<option value="October">October</option>
+										<option value="November">November</option>
+										<option value="December">December</option>
+										</select>
+										
+										<select name="Days">
+										<option value="Days">Days</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+	   		                            <option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+	   		                            <option value="24">34</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+										</select>
+										
+										<select name="Year">
+										<option value="Year">Year</option>
+										<option value="1995">1995</option>
+										<option value="1996">1996</option>
+										<option value="1997">1997</option>
+										<option value="1998">1998</option>
+										<option value="1999">1999</option>
+										<option value="2000">2000</option>
+										<option value="2001">2001</option>
+										<option value="2002">2002</option>
+										<option value="2003">2003</option>
+										<option value="2004">2004</option>
+										<option value="2005">2005</option>
+
+										</select>
+										
+									COUNTRY: <select name="country">
+									     <option>India</option>
+										 <option>China</option>
+										 <option>Pakistan</option>
+										 <option>Usa</option>
+										 <option>Italy</option>
+										 </select>
+										 
+									STATE: <select name="state">
+									     <option>Karnataka</option>
+										 <option>Temil nadu</option>
+										 <option>Kerala</option>
+										 <option>Maharaastra</option>
+										 <option>Andra pradesh</option>
+										 </select>	
+										 
+							   		    DISTRICT: <select name="district">
+									     <option>Mysore</option>
+										 <option>Bengalore</option>
+										 <option>Udupi</option>
+										 <option>Hasan</option>
+										 <option>Belgam</option>
+										 </select>	<br><br>
+										 
+										 COMBINATION: <select name="combination">
+									     <option>B.C.A</option>
+										 <option>B.Com</option>
+										 <option>B.S.C</option>
+										 </select>	
+										 
+				 					     LANGUAGE : <select name="language">
+									     <option>Kannada</option>
+										 <option>Hindi</option>
+										 </select>	
+										 
+										 
+										 RELIGION: <select name="religion">
+									     <option>Hindu</option>
+										 <option>Muslim</option>
+										 <option>Chirsten</option>
+										 <option>Sik</option>
+										 <option>Buddism</option>
+										 </select><br><br>
+										 
+										  ADDRESS: <input type="text" name="address" size="92"><br><br>
+										  CONTACT NO: <input type="text" name="phn no"size="20"><br><br> 
+										  PERSENTAGE OF PREVIOUS YEAR: <input type="text" name="persentage" size="20"><br><br>
+										   PREVIOUS COLLAGE NAME: <input type="text" name="collage" size="76"><br><br>
+										   <div  class="textme">
+										   <a href="" class="hero-btn">Submit</a>
+										   <a href="" class="hero-btn">Reset</a>
+						             </div>
+					         </form>
+				      </td>
+              </table>
+	    </div>
+</center>
+</section>
+	
+		    		    <section class="footer">
+			<h2>About Us</h2>
+			  <div class="icons">
+			         <i class="fa fa-facebook"></i>
+			         <i class="fa fa-twitter"></i>
+			         <i class="fa fa-instagram"></i>
+			         <i class="fa fa-envelope-o"></i>
+					 <i class="fa fa-github"></i>
+					 		<i class="fa fa-university"></i>			 			 
+		 </div>			
+			<p>NIE Degree College is one of the premier educational institutions in Mysore, offering undergraduate in basic Science, Computer Application & Commerce ...</p>
+		 </section>
+		   </body>
+</html>

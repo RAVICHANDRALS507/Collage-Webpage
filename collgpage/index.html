@@ -1,0 +1,371 @@
+<html>
+<head>
+           <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>university website</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>		
+	*{
+	      margin: 0;
+	      padding: 0;
+		  font-family: 'Poppins', sans-serif;
+	  }
+  .header{
+         min-height: 100vh;
+	     width: 100%;
+	     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(nie-first-grade-college-mysore.jpg);
+	     background-position: center;
+         background-size: cover;
+         position: relative;
+      }
+
+nav{
+        display: flex;
+         padding: 2%  6%;
+        justify-content: space-between;
+        align-items: center;  
+      }
+
+nav img{
+           width: 150px;
+         }
+
+nav-links{
+           flex: 1;
+		   text-align: right;
+          }
+
+.nav-links ul  li{
+                 list-style: none;
+		        display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+            }
+			
+	.nav-links ul  li a{		
+                color: #fff;
+                text-decoration: none;
+		        font-size: 13px;
+	}
+	
+.nav-links ul  li::after{
+               content: ' ' ;
+			   width: 0px;
+			   height: 2px;
+			   background:  #f44336;
+			   display: block;
+			   margin: auto;
+			   transition: 0.5s; 
+}
+
+.nav-links ul  li:hover::after{
+               width: 100%;
+			   
+}
+
+.text-box{
+        width: 90%;
+		color: #fff;
+		position: absolute;
+        top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+	}
+	
+.text-box h1{
+	           font-size: 62px;
+        	}
+	
+.text-box p{	
+          margin: 10px 0 40px;
+          font-size: 14px;
+          color: #fff;
+   }
+	
+.hero-btn{
+         display: inline-block;
+		 text-decoration: none;
+		 color: #fff;
+		 border: 1px  solid #fff; 
+		 padding:  12px 34px;
+		 font-size: 13px;
+		 background:  transparent;
+		 position: relative;
+		 cursor:  pointer;
+}
+
+.hero-btn:hover{
+         border: 1px solid #fd00da;
+		 background: #fd00da;
+		 transition: 1s;
+}
+
+.course{
+     width: 80%;
+	 margin: auto;
+	 text-align: center;
+	 padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+	font-weight: 600;
+}
+
+p{
+   color: #777;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 22px;
+   padding: 10px;
+}
+
+.row{
+     margin-top: 5%;
+	 display: flex;
+	 justify-content: space-between;
+}
+
+.course-col{
+      flex-basis: 31%;
+	  background: #19d7f8;
+	  border-radius: 10px;
+	  margin-bottom: 5%;
+	  padding: 20px 12px;
+	  box-sizing: border-box;
+	  transition: 1s;
+}
+
+h3{
+   text-align: center;
+   font-weight:  600;
+   margin: 10px 0;
+}
+
+.campus{
+
+	  margin: auto;
+	  text-align: center;
+	  padding-top:  50px;
+	  left: 100%;
+}
+
+.campus-col{
+      flex-base: 32%;
+	  border-radius: 10px;
+	  margin-bottom:  30px;
+	  position:  relative;
+	  overflow: hidden;
+      left: 5%;
+}
+
+.Facilities{
+      width: 80px;
+	  margin: auto;
+	  text-align: center;
+	  padding-top:  50px;
+}
+
+.testimonials{
+            width: 80%;
+    		margin: auto;
+	        padding-top:  50px;
+            text-align: center;	  
+}
+
+.testimonials-col{
+            flex-base: 44%;
+			border-radius: 10px;
+			margin-bottom: 1%;
+			text-align: left;
+			background: black;
+			padding: 25px;
+			cursor: pointer;
+			display: flex;
+}
+
+.testimonials-col img{
+          height: 40px;
+		  margin-left: 5px;
+		  margin-right: 30px;
+		  border-radius: 50%;
+}
+
+.testimonials-col.fa{
+     color: #f44336;
+}
+
+.cta{
+      margin: 100px auto;
+	  width: 80%;
+	  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(UWA_progressed_students_700.jpg);
+	  background-size: cover;
+	  border-radius: 10px;
+	  text-align: center;
+	  padding: 100px 0;
+}
+
+.cta h1{
+      color: #fff;
+	  margin-bottom: 40px;
+	  padding: 0;
+}
+
+.world{
+            width: 80%;
+    		margin: auto;
+	        padding-top:  5%;
+            text-align: center;
+}
+
+.footer{
+      width: 100%;
+	  text-align: center;
+	  padding: 30px 0;
+}
+
+.footer h4{
+       margin-bottom: 25px;
+	   margin-top: 20px;
+	   font-weight: 600;
+}
+
+.icons .fa{
+     color: #f44336;
+	 margin: 0 13px;
+	 cursor: pointer;
+	 padding: 18px 0;
+}
+
+.fa-heart-o{
+   color: #f44336;
+}
+
+</style>		
+</head>
+<body>
+            <section class="header">
+		     	<nav>
+                   <a href=""><img src="nie-first-grade-college-mysore-logo.jpg"></a>
+                        <div class="nav-links">
+					           <ul>
+					                    <li><a href="index.html">HOME</a></li>
+									    <li><a href="about.html">ABOUT US</a></li>
+									    <li><a href="courses.html">COURSE</a></li>
+									    <li><a href="blog.html">BLOG</a></li>
+								        <li><a href="contact.html">CONTACT US</a></li>
+					          </ul>
+					  </div>
+              </nav>
+			        <div  class="text-box">
+			             <h1>NIE FIRST GRADE COLLAGE</h1>
+						 <P> The beginning of knowledge is the discovery of something we do not understand. </P>
+						    <a href="" class="hero-btn">Visit Us  To  Know More</a>
+			    </div>
+           </section>
+		   
+		   
+		          <!-------------courses------------>
+				  
+		              <section class="course">
+					        <h1>Courses We Offer</h1>
+							<p>In NIE First Grade Collage</p>
+							
+					<div class="row">
+                           <div class="course-col">
+                                 <h3>DEGREE</h3>
+							<p>Education. an academic title conferred by universities and colleges as an indication of the completion of a course of study, or as an honorary recognition of achievement.</P>
+                     </div>		
+					 
+                           <div class="course-col">
+					 <h3>B.C.A</h3>
+					 <p>Bachelor in Computer Application (BCA) is an undergraduate degree course in computer applications. ... Bachelor in Computer Application (BCA) is one of the popular courses among the students who want to make their career in the IT sectors</p>
+				</div>	
+				
+				 <div class="course-col">
+                                 <h3>B.S.C</h3>
+								<p> Whereas a BA is a bachelor of arts, a BSc is a bachelor of science. This is where you'll find the 'hard' sciences such as physics, chemistry, and biology, as well as maths and computing degrees</P>
+                     </div>
+					 
+					  <div class="course-col">
+                                 <h3>B.COM</h3>
+								<p> BCom or Bachelor of Commerce is a three-year undergraduate course imparted in regular as well as distance education mode. BCom is the second most popular undergraduate course in the Commerce branch.</P>
+						</div>
+				</section>
+				
+				<section class="campus">
+				    <h1>Campus</h1>
+					<p>NIE</p> 
+					</section>
+					
+					<section>
+					       	<div class="row">
+                                  <div class="campus-col">
+								 <img src=" https://images.static-collegedunia.com/public/college_data/images/appImage/46149_NIE_NEW.jpg?tr=h-193,c-force"width="45%" height="80%">
+								  <img src="F:\collgpage\nie-first-grade-college-mysore.jpg" width="45%" height="80%">
+							  </div>
+						 </div>
+				</section>
+		   
+		   <section class="testimonials">
+		         <h1>Openion Of  Students About Our Collage</h1>
+				          <P>NIE FIRST GRADE COLLAGE VIDYARANYAPURA, MYSURU.</p>
+		                         <div class="row">
+		                              <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNB_tSupeOZhLe53K9dNH9Bro2HdfZjv9CQQ&usqp=CAU">
+							                        <p> The college has good facility and it is very great administration and college has very good lab, library, and it has well equipment and it is Great to be a student</p>
+											     		<h3>Ravi Krishnan<h3>
+
+						                 </div>
+			                       </div>
+								   
+		                              <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfa758-9Zet25uR43OnWUDxPh_5ivrKWg4g&usqp=CAU">
+							                        <p>It's very good for the students who need to persist their college life with their studies and talents too</p>
+											        	<h3>Devid Vilson<h3>
+
+						                 </div>
+			                       </div>
+		                              <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjQ88nDFCxmzQeXgsq22U8pFzGP6_WoytyCg&usqp=CAU">
+							                        <p>NIE First Grade College, Mysore Karnataka is established in the year 1994 to provide higher education to build career in the field of Science, Computer field</p>
+											        	<h3>Velina<h3>
+						                 </div>
+			                             <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8heeQ4MxmYamagsCXS9E4O7QN1_2FZdDC5g&usqp=CAU">
+							                        <p>Collage has a consumer rating of 4.53 stars from 1,159 reviews indicating that most customers are generally satisfied with their purchases. Consumers satisfied with Collage most frequently mention customer service,</p>
+											        	<h3>Das<h3>
+						                 </div>
+				                           <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZqec3F8Xszj_dOqXtsLLB3lvW6CC1O0YUg&usqp=CAU">
+							                        <p>photo blanket and christmas gift. Collage ranks 4th among Photo Printing sites.</p>
+											        	<h3>Velina<h3>
+						                 </div>									 
+			                       </div>								   
+		                   </section>
+		   								   
+		             	   <section class="world">
+					          <h1>Welcome</h1>
+					  </section>
+					  
+				      	  <section class="cta">
+					            <h1>Enroll For Courses</h1>
+						           <a href="contact.html" class="hero-btn">CONTACT US</a>
+					   </section>
+		   
+		    <section class="footer">
+			<h2>About Us</h2>
+			  <div class="icons">
+			         <i class="fa fa-facebook"></i>
+			         <i class="fa fa-twitter"></i>
+			         <i class="fa fa-instagram"></i>
+			         <i class="fa fa-envelope-o"></i>
+					 <i class="fa fa-github"></i>
+					 <i class="fa fa-university"></i>
+		 </div>
+			<p>NIE Degree College is one of the premier educational institutions in Mysore, offering undergraduate in basic Science, Computer Application & Commerce ...</p>
+			 </section>
+	</body>
+</html>
