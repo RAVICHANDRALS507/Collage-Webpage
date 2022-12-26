@@ -1,0 +1,754 @@
+<html>
+<head>
+           <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>university website</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>		
+	*{
+	      margin: 0;
+	      padding: 0;
+		  font-family: 'Poppins', sans-serif;
+		  scroll-behavior: smooth;
+	  }
+  .header{
+         min-height: 100vh;
+	     width: 100%;
+	     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(nie-first-grade-college-mysore.jpg);
+	     background-position: center;
+         background-size: cover;
+         position: relative;
+      }
+
+nav{
+        display: flex;
+         padding: 2%  6%;
+        justify-content: space-between;
+        align-items: center;  
+      }
+
+nav img{
+           width: 150px;
+         }
+
+nav-links{
+           flex: 1;
+		   text-align: right;
+          }
+
+.nav-links ul  li{
+                 list-style: none;
+		        display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+            }
+			
+	.nav-links ul  li a{		
+                color: #fff;
+                text-decoration: none;
+		        font-size: 13px;
+	}
+	
+.nav-links ul  li::after{
+               content: ' ' ;
+			   width: 0px;
+			   height: 2px;
+			   background:  #f44336;
+			   display: block;
+			   margin: auto;
+			   transition: 0.5s; 
+}
+
+.nav-links ul  li:hover::after{
+               width: 100%;
+			   
+}
+
+.text-box{
+        width: 90%;
+		color: #fff;
+		position: absolute;
+        top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+	}
+	
+.text-box h1{
+	           font-size: 62px;
+        	}
+	
+.text-box p{	
+          margin: 10px 0 40px;
+          font-size: 14px;
+          color: #fff;
+   }
+	
+.hero-btn{
+         display: inline-block;
+		 text-decoration: none;
+		 color: #fff;
+		 border: 1px  solid #fff; 
+		 padding:  12px 34px;
+		 font-size: 13px;
+		 background:  transparent;
+		 position: relative;
+		 cursor:  pointer;
+}
+
+.hero-btn:hover{
+         border: 1px solid #fd00da;
+		 background: #fd00da;
+		 transition: 1s;
+}
+
+.course{
+     width: 80%;
+	 margin: auto;
+	 text-align: center;
+	 padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+	font-weight: 600;
+}
+
+p{
+   color: #777;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 22px;
+   padding: 10px;
+}
+
+.row{
+     margin-top: 5%;
+	 display: flex;
+	 justify-content: space-between;
+}
+
+.course-col{
+      flex-basis: 31%;
+	  background: #19d7f8;
+	  border-radius: 10px;
+	  margin-bottom: 5%;
+	  padding: 20px 12px;
+	  box-sizing: border-box;
+	  transition: 1s;
+}
+
+h3{
+   text-align: center;
+   font-weight:  600;
+   margin: 10px 0;
+}
+
+.campus{
+
+	  margin: auto;
+	  text-align: center;
+	  padding-top:  50px;
+	  left: 100%;
+}
+
+.campus-col{
+      flex-base: 32%;
+	  border-radius: 10px;
+	  margin-bottom:  30px;
+	  position:  relative;
+	  overflow: hidden;
+      left: 5%;
+}
+
+.Facilities{
+      width: 80px;
+	  margin: auto;
+	  text-align: center;
+	  padding-top:  50px;
+}
+
+.testimonials{
+            width: 80%;
+    		margin: auto;
+	        padding-top:  50px;
+            text-align: center;	  
+}
+
+.testimonials-col{
+            flex-base: 44%;
+			border-radius: 10px;
+			margin-bottom: 1%;
+			text-align: left;
+			background: black;
+			padding: 25px;
+			cursor: pointer;
+			display: flex;
+}
+
+.testimonials-col img{
+          height: 40px;
+		  margin-left: 5px;
+		  margin-right: 30px;
+		  border-radius: 50%;
+}
+
+.testimonials-col.fa{
+     color: #f44336;
+}
+
+.cta{
+      margin: 100px auto;
+	  width: 80%;
+	  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(UWA_progressed_students_700.jpg);
+	  background-size: cover;
+	  border-radius: 10px;
+	  text-align: center;
+	  padding: 100px 0;
+}
+
+.cta h1{
+      color: #fff;
+	  margin-bottom: 40px;
+	  padding: 0;
+}
+
+
+
+.footer{
+      width: 100%;
+	  text-align: center;
+	  padding: 30px 0;
+}
+
+.footer h4{
+       margin-bottom: 25px;
+	   margin-top: 20px;
+	   font-weight: 600;
+}
+
+
+
+       /*Course page*/
+
+
+.hero-btn:hover{
+         border: 1px solid gray;
+		 background: red;
+		 transition: 0.1s;
+}
+		 
+
+.course-col{
+      flex-basis: 31%;
+	  background: orange;
+	  border-radius: 10px;
+	  margin-bottom: 5%;
+	  padding: 20px 12px;
+	  box-sizing: border-box;
+	  transition: 1s;
+}
+
+.textme{
+	text-align-last: center;
+}
+
+.footer{
+      width: 100%;
+	  text-align: center;
+	  padding: 30px 0;
+	  padding-top:  0px;
+}
+
+.footer h4{
+       margin-bottom: 5px;
+	   margin-top: 20px;
+	   font-weight: 600;
+}
+
+.icons .fa{
+     color: #f44336;
+	 margin: 0 13px;
+	 cursor: pointer;
+	 padding: 18px 0;
+}
+
+.fa-heart-o{
+   color: #f44336;
+}
+
+
+<!--Blog-->
+
+.blog-left{
+     flex-base: 65%;
+}
+
+
+.blog-left img{
+     width: 100%;
+}
+
+.hero-btn{
+         display: inline-block;
+		 text-decoration: none;
+		 color: black;
+		 border: 1px  solid black; 
+		 padding:  12px 34px;
+		 font-size: 13px;
+		 background:  transparent;
+		 position: relative;
+		 cursor:  pointer;
+}
+
+
+.hero-btn:hover{
+         border: 1px solid #fd00da;
+		 background: #fd00da;
+		 transition: 1s;
+}
+
+.comment-box{
+     border: 1px solid #ccc;
+	 margin:50px 0;
+	 padding: 10px 20px;
+}
+
+.comment-form input, .comment-form textarea{
+       width: 100%;
+	   padding: 10px;
+	   margin: 15px  0;
+	   box-sizing: boder-box;
+	   border: none;
+	   outline: none;
+	   background: #f0f0f0;
+}
+/* Contact Us// */
+
+
+.location{
+       width: 80%;
+	   margin: auto;
+	   padding: 80px 0;
+}
+
+.location iframe{
+     width: 100%;
+}
+
+
+
+.contact-us{
+      width: 80%;
+	  margin: auto;
+}
+
+.contact-col div{
+       display: flex;
+	   align-items: center;
+	   margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+	color: #fd00da;
+	margin: 10px;
+	margin-right: 30px;
+}
+
+.contact-col div p{
+        padding: 0;
+}
+
+
+.contact-colui{
+     border: 1px solid #ccc;
+	 margin:50px 0;
+	 padding: 10px 20px;
+}
+
+
+.contact-colui input, .contact-colui textarea{
+     width: 100%;
+	 padding: 15px;
+	 margin-bottom: 17px;
+	 outline: none;
+	 border: 1px solid #ccc;
+}
+
+
+
+
+
+
+</style>		
+</head>
+<body>
+            <section class="header">
+		     	<nav>
+                   <a href=""><img src="nie-first-grade-college-mysore-logo.jpg"></a>
+                        <div class="nav-links">
+					           <ul>
+					                    <li><a href="#">HOME</a></li>
+									    <li><a href="#course">COURSE</a></li>
+									    <li><a href="#blog">BLOG</a></li>
+										<li><a href="#contact">CONTACT US</a></li>
+					          </ul>
+					  </div>
+              </nav>
+			        <div  class="text-box">
+			             <h1>NIE FIRST GRADE COLLAGE</h1>
+						 <P> The beginning of knowledge is the discovery of something we do not understand. </P>
+						    <a href="" class="hero-btn">Visit Us  To  Know More</a>
+			    </div>
+           </section>
+		   
+		   
+				
+				<section class="campus">
+				    <h1>Campus</h1>
+					<p>NIE First Grade College</p> 
+					</section>
+					
+
+					<section>
+					       	<div class="row">
+                                  <div class="campus-col">
+								 <img src=" https://images.static-collegedunia.com/public/college_data/images/appImage/46149_NIE_NEW.jpg?tr=h-193,c-force"width="45%" height="100%">
+								 <img src=" https://images.static-collegedunia.com/public/college_data/images/appImage/46149_NIE_NEW.jpg?tr=h-193,c-force"width="45%" height="100%">
+
+							  </div>
+						 </div>
+				</section>
+		   
+
+				<!-------------Openings------------>
+		   <section class="testimonials">
+		         <h1>Openion Of  Students About Our Collage</h1>
+				          <P>NIE FIRST GRADE COLLAGE VIDYARANYAPURA, MYSURU.</p>
+		                         <div class="row">
+		                              <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNB_tSupeOZhLe53K9dNH9Bro2HdfZjv9CQQ&usqp=CAU">
+							                        <p> The college has good facility and it is very great administration and college has very good lab, library, and it has well equipment and it is Great to be a student</p>
+											     		<h3>Ravi Krishnan<h3>
+
+						                 </div>
+			                       </div>
+								   
+		                              <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfa758-9Zet25uR43OnWUDxPh_5ivrKWg4g&usqp=CAU">
+							                        <p>It's very good for the students who need to persist their college life with their studies and talents too</p>
+											        	<h3>Devid Vilson<h3>
+
+						                 </div>
+			                       </div>
+		                              <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjQ88nDFCxmzQeXgsq22U8pFzGP6_WoytyCg&usqp=CAU">
+							                        <p>NIE First Grade College, Mysore Karnataka is established in the year 1994 to provide higher education to build career in the field of Science, Computer field</p>
+											        	<h3>Velina<h3>
+						                 </div>
+			                             <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8heeQ4MxmYamagsCXS9E4O7QN1_2FZdDC5g&usqp=CAU">
+							                        <p>Collage has a consumer rating of 4.53 stars from 1,159 reviews indicating that most customers are generally satisfied with their purchases. Consumers satisfied with Collage most frequently mention customer service,</p>
+											        	<h3>Das<h3>
+						                 </div>
+				                           <div class="testimonials-col">
+							                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZqec3F8Xszj_dOqXtsLLB3lvW6CC1O0YUg&usqp=CAU">
+							                        <p>photo blanket and christmas gift. Collage ranks 4th among Photo Printing sites.</p>
+											        	<h3>Velina<h3>
+						                 </div>									 
+			                       </div>								   
+		                   </section>
+
+						   <!-------------courses------------>
+				  
+				<section class="course">
+						<h1>Courses We Offer</h1>
+						<div id="course" class="coures">
+					  <p>In NIE First Grade Collage</p>
+					</div>
+
+					<div class="row">
+				   <div class="course-col">
+						 <h3>DEGREE</h3>
+					<p>Education. an academic title conferred by universities and colleges as an indication of the completion of a course of study, or as an honorary recognition of achievement.</P>
+			 </div>		
+			 
+				   <div class="course-col">
+			 <h3>B.C.A</h3>
+			 <p>Bachelor in Computer Application (BCA) is an undergraduate degree course in computer applications. ... Bachelor in Computer Application (BCA) is one of the popular courses among the students who want to make their career in the IT sectors</p>
+		</div>	
+		
+		 <div class="course-col">
+						 <h3>B.S.C</h3>
+						<p> Whereas a BA is a bachelor of arts, a BSc is a bachelor of science. This is where you'll find the 'hard' sciences such as physics, chemistry, and biology, as well as maths and computing degrees</P>
+			 </div>
+			 
+			  <div class="course-col">
+						 <h3>B.COM</h3>
+						<p> BCom or Bachelor of Commerce is a three-year undergraduate course imparted in regular as well as distance education mode. BCom is the second most popular undergraduate course in the Commerce branch.</P>
+				</div>
+		</section>
+		   								   
+		             	   
+		   
+
+
+<!-------------Application------------>
+			   
+								<section class="course">
+						   <h1>Apply Online</h1>
+						   <p>In NIE First Grade Collage</p>
+						   
+						   <div class="course-col">
+				<center>
+					   <table bolder=" " bordercolor="">
+					   <tr>
+						   <th><h2>Student Entry Form (Nie campus)<h2></th>
+						 </tr>
+					   
+					   <tr>
+							 <td>
+									 STUDENT ID: <input type="text" name="student_id" size="90"><br><br>
+								   STUDENT NAME: <input type="text" name="student_name" size="85"><br><br>
+								   STUDENT MAIL ID: <input type="text" name="student_name" size="85"><br><br>									
+								   PASSWORD: <input type="password" name="password" size="90"><br><br>
+								   FATHER NAME: <input type="text" name="student_name" size="87"><br><br>
+								   MOTHER NAME: <input type="text" name="student_name" size="87"><br><br>
+								   SEX: <input type="radio" name="sex" value="MALE">MALE 
+								   SEX: <input type="radio" name="sex" value="FEMALE">FEMALE<br><br>
+								   DOB:<select name="Month">
+									   <option value="month">Month</option>
+									   <option value="January">January</option>
+									   <option value="February">February</option>
+									   <option value="March">March</option>
+									   <option value="April">April</option>
+									   <option value="May">May</option>
+									   <option value="June">June</option>
+									   <option value="July">July</option>
+									   <option value="August">August</option>
+									   <option value="september">september</option>
+									   <option value="October">October</option>
+									   <option value="November">November</option>
+									   <option value="December">December</option>
+									   </select>
+									   
+									   <select name="Days">
+									   <option value="Days">Days</option>
+									   <option value="1">1</option>
+									   <option value="2">2</option>
+									   <option value="3">3</option>
+									   <option value="4">4</option>
+									   <option value="5">5</option>
+									   <option value="6">6</option>
+									   <option value="7">7</option>
+									   <option value="8">8</option>
+									   <option value="9">9</option>
+										  <option value="10">10</option>
+									   <option value="11">11</option>
+									   <option value="12">12</option>
+									   <option value="13">13</option>
+									   <option value="14">14</option>
+									   <option value="15">15</option>
+									   <option value="16">16</option>
+									   <option value="17">17</option>
+									   <option value="18">18</option>
+									   <option value="19">19</option>
+									   <option value="20">20</option>
+									   <option value="21">21</option>
+									   <option value="22">22</option>
+									   <option value="23">23</option>
+										  <option value="24">34</option>
+									   <option value="25">25</option>
+									   <option value="26">26</option>
+									   <option value="27">27</option>
+									   <option value="28">28</option>
+									   <option value="29">29</option>
+									   <option value="30">30</option>
+									   <option value="31">31</option>
+									   </select>
+									   
+									   <select name="Year">
+									   <option value="Year">Year</option>
+									   <option value="1995">1995</option>
+									   <option value="1996">1996</option>
+									   <option value="1997">1997</option>
+									   <option value="1998">1998</option>
+									   <option value="1999">1999</option>
+									   <option value="2000">2000</option>
+									   <option value="2001">2001</option>
+									   <option value="2002">2002</option>
+									   <option value="2003">2003</option>
+									   <option value="2004">2004</option>
+									   <option value="2005">2005</option>
+
+									   </select>
+									   
+								   COUNTRY: <select name="country">
+										<option>India</option>
+										<option>China</option>
+										<option>Pakistan</option>
+										<option>Usa</option>
+										<option>Italy</option>
+										</select>
+										
+								   STATE: <select name="state">
+										<option>Karnataka</option>
+										<option>Temil nadu</option>
+										<option>Kerala</option>
+										<option>Maharaastra</option>
+										<option>Andra pradesh</option>
+										</select>	
+										
+										  DISTRICT: <select name="district">
+										<option>Mysore</option>
+										<option>Bengalore</option>
+										<option>Udupi</option>
+										<option>Hasan</option>
+										<option>Belgam</option>
+										</select>	<br><br>
+										
+										COMBINATION: <select name="combination">
+										<option>B.C.A</option>
+										<option>B.Com</option>
+										<option>B.S.C</option>
+										</select>	
+										
+										 LANGUAGE : <select name="language">
+										<option>Kannada</option>
+										<option>Hindi</option>
+										</select>	
+										
+										
+										RELIGION: <select name="religion">
+										<option>Hindu</option>
+										<option>Muslim</option>
+										<option>Chirsten</option>
+										<option>Sik</option>
+										<option>Buddism</option>
+										</select><br><br>
+										
+										 ADDRESS: <input type="text" name="address" size="92"><br><br>
+										 CONTACT NO: <input type="text" name="phn no"size="20"><br><br> 
+										 PERSENTAGE OF PREVIOUS YEAR: <input type="text" name="persentage" size="20"><br><br>
+										  PREVIOUS COLLAGE NAME: <input type="text" name="collage" size="76"><br><br>
+										  <div  class="textme">
+										  <a href="" class="hero-btn">Submit</a>
+										  <a href="" class="hero-btn">Reset</a>
+									</div>
+							</form>
+					 </td>
+			 </table>
+	   </div>
+</center>
+
+
+   <!-- Blog//// -->
+
+
+<div id="blog" class="light">
+	<h1>Be Graduate From Our Collage</h1>
+</div>
+
+ <section class="blog-content">
+ 
+	 <div class="row">
+			 <div class="blog-left">
+				 <img src="https://i.pinimg.com/originals/fb/d4/26/fbd4268d44833d2891051b5385d22436.jpg">
+			   
+<center><h3>The beginning of knowledge is the discovery of something we do not understand.</h3><center>
+		  <p>Despite meaning "beginning", commencement may be mistaken to mean "ending" due to its association with the end of one's studies. Its usage originated with students finishing their studies and being awarded a degree, thus commencing as bachelors or masters in a subject and enjoying new privileges within academia.</p>
+		  
+		  
+		  <br>
+		  <p>The procedures and traditions surrounding academic graduation ceremonies differ around the world. Whereas in the United Kingdom a graduation usually only occurs at university level, in the United States of America and many other countries graduations also occur at high schools where no higher education qualifications are conferred upon the graduates. In a graduation ceremony the students wear formal academic dress, such as square academic caps and gowns that are used for such occasions.Graduation traditions vary across universities observing different culturesFor example, most universities in Sweden are research-oriented and may present their students with bachelor's, master's, and doctor's degrees covering all academic streams. Universities across the country are based through the Higher Education Ordinance. Most of the national programs provide Swedish, English, Math and Science among degree courses</p>
+		  <br>
+		  <p>Ceremonies for graduating students date from the first universities in Europe in the twelfth century. At that time Latin was the language of scholarship. A universitas was a guild of masters (such as MAs) with licence to teach. "Degree" and "graduate" come from gradus, meaning "step". The first step was admission to a bachelor's degree. The second step was the masters step, giving the graduate admission to the universitas and license to teach. Typical dress for graduation is gown and hood, or hats adapted from the daily dress of university staff in the Middle Ages, which was in turn based on the attire worn by medieval clergy.The tradition of wearing graduation hats in Sweden has been in place since the mid-eighteenth century. The cap is typically a white sailor hat with a black or dark blue band around it, a crown motif, and a black peak at the front. The graduation hat tradition was initially adopted by students at Uppsala University. The headgear then became popular across several other European nations as well.</p>
+		  <br>
+		  <p>The commencement is a ceremony in which degrees or diplomas are conferred upon graduating students. A commencement speech is typically given by a notable figure in the community or a graduating student. The person giving such a speech is known as a commencement speaker. Very commonly, colleges or universities will invite politicians, important citizens, or other noted speakers to come and address the graduating class.A student speaker may deliver remarks either in lieu or in conjunction with a notable outside figure. Student commencement speakers are often valedictorians or may otherwise be elected by their peers to represent the student body.</p>
+		  <br>
+		  <p>“The most important thing in your life is to live your life with integrity and to not give into peer pressure to try to be something that you're not.” “The old rules are crumbling and nobody knows what the new rules are. So make up your own rules.” “Graduation is not the end; it's the beginning. Happy graduation. I bless you with all that you need to earn many more achievements and facts in life ahead. Congratulations and well done. We're so happy that you've achieved this great milestone- Wishing you great success with your dreams and career.</p>
+		  <br>
+		  <p>Graduation is the successful completion of a course of study at a university, college, or school, for which you receive a degree or diploma. ... A graduation is a special ceremony at university, college, or school, at which degrees and diplomas are given to students who have successfully completed their studies. Your graduation ceremony is also referred to as “commencement” or “convocation”. After walking the stage, you'll go from from “graduand” to “graduate” over the course of the graduation ceremony. You'll get to hear from esteemed faculty members, guest speakers, and shake the Chancellor's hand</p>
+		  <br>
+		  <p>But graduation is more than just throwing a cap in the air, or dressing up, or getting an important piece of paper, it's about celebrating achievements, being with the people you shared a part of your life with, being proud of your journey. If you qualify to graduate and don't go to the graduation ceremony, the school will keep your diploma for you to pick up later, or simply mail it to you. The graduation itself is just a ceremony, it has no effect on your grades or credits earned. Elementary school graduation is a big deal. It celebrates all of the achievements your students have made thus far in school. Whether you call it graduation day, moving up day, or recognition day, this is a day to honor and celebrate your students moving on to middle schoo</p>
+		  <br>
+		  <p>So to answer, yes it is okay not to go. Just think hard about why you don't want to go. You are not going to see most of the people at your school ever again; you may hang out with a small group of friends and such, but most of those people are gone forever from your life.</p>
+		  <br>
+
+		  <section>
+			<div class="comment-box">
+				<h3>Leave a comment</h3>
+				   <form class="comment-form">
+					  <input type="text" placeholder="Enter Name">
+					  <input type="email" placeholder="Enter Email">
+					    <textarea rows="5" placeholder="Add Comment"></textarea>
+					</textarea>
+					  <button type="submit" class="hero-btn red-btn">Post comment
+					</button>
+				</form>
+			</div>
+
+		</section>
+
+  <!-- Contact Us/// -->
+  
+
+<div id="contact" class="yellow">
+<h1>Map View(Nie campus)<h1>
+</div>
+<section class="location">
+		   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.5831355441246!2d76.63898001511359!3d12.276464833069998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf6ff7b3ab19bd%3A0xa8b28fa1ed3540bb!2sNIE%20First%20Grade%20College!5e0!3m2!1sen!2sin!4v1618388194309!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                   
+</section>
+
+<div class="contact-us">
+  <div class="contact-col">
+  <div>
+  <i class="fa fa-university"></i>
+  <span>
+		<h5>#65, Vidyaranyapura, Mysuru, Karnataka 570008</h5>
+		<p>Mysuru Karnataka India</p>
+  </span>
+  </div>
+	  <div>
+  <i class="fa fa-phone"></i>
+  <span>
+		<h5>+91 8212489676</h5>
+		<p>Monday To Saturday</p>
+  </span>
+  </div>
+  <div>
+  <i class="fa fa-envelope-o"></i>
+  <span>
+		<h5>niefgc@gmail.com</h5>
+		<p>Mail Us If Any Quary</p>
+  </span>
+  </div>
+  </div>
+  <div class="contact-colui">
+	   <form action="">
+			<input type="text" placeholder="Enter Your Name" required>
+			<input type="email" placeholder="Enter Email Address" required>
+			<input type="text" placeholder="Enter Your Subject" required>
+			<textarea rows="8" placeholder="Message"></textarea>
+			<button type="Submit" class="hero-btn red-btn">Send Message</button>
+			</form>
+    		</div>
+		</div>
+	</section>	
+		
+	<section class="footer">
+		<h2>About Us</h2>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-envelope-o"></i>
+			<i class="fa fa-github"></i>
+			<i class="fa fa-university"></i>
+		</div>			
+		<p>NIE Degree College is one of the premier educational institutions in Mysore, offering undergraduate in basic Science, Computer Application & Commerce ...</p>
+	</section>
+</body>
+</html>
